@@ -10,5 +10,6 @@ class MainActivity : AppCompatActivity() {
 // todo 1. tab controller
 // todo 2. recyclerview 
 // todo 3. viewmodel 적용
+
     }
 }
