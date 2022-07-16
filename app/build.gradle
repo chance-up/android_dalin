@@ -46,8 +46,24 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
+    // for viewmodel, livedata
+    def lifecycle_version = "2.5.0"
+    def ktx_version = "1.5.0"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+    implementation "androidx.fragment:fragment-ktx:$ktx_version"
+    implementation "androidx.activity:activity-ktx:$ktx_version"
+
     // for navigation
     def nav_version = "2.5.0"
     implementation("androidx.navigation:navigation-fragment-ktx:$nav_version")
     implementation("androidx.navigation:navigation-ui-ktx:$nav_version")
+
+    // for viewpager2
+    implementation("androidx.viewpager2:viewpager2:1.0.0")
+
+    // for glide
+    def glide_version = "4.13.2"
+    implementation "com.github.bumptech.glide:glide:$glide_version"
+    annotationProcessor "com.github.bumptech.glide:compiler:$glide_version"
 }
