@@ -13,6 +13,26 @@
         android:layout_height="match_parent"
         tools:context=".ui.HomeFragment">
 
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toolbar_style"
+            android:minHeight="?attr/actionBarSize"
+            app:titleTextColor="@color/teal_700"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/title"
+                android:text="출장의달인"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="italic" />
+
+        </androidx.appcompat.widget.Toolbar>
+
 
         <androidx.viewpager2.widget.ViewPager2
             android:id="@+id/advertise_viewpager"
@@ -23,7 +43,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
 <!--        <com.google.android.material.tabs.TabLayout-->
 <!--            android:id="@+id/advertise_indicator_tablayout"-->

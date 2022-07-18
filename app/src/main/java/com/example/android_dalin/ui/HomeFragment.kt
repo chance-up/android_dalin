@@ -32,6 +32,7 @@ class HomeFragment : Fragment() {
 //        val tabLayout = homeFragmentBinding.advertiseIndicatorTablayout
         viewPager.adapter=ViewPagerAdapter()
 
+
     }
 
 }
