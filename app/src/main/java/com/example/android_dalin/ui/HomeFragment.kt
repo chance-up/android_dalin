@@ -29,10 +29,6 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val viewPager = homeFragmentBinding.advertiseViewpager
-//        val tabLayout = homeFragmentBinding.advertiseIndicatorTablayout
         viewPager.adapter=ViewPagerAdapter()
-
-
     }
-
 }
