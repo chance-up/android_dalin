@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.234" />
         <entry key="app/src/main/res/drawable/avd_anim.xml" value="0.243" />
         <entry key="app/src/main/res/drawable/ic_android_black_24dp.xml" value="0.18" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.234" />
         <entry key="app/src/main/res/drawable/toolbar_style.xml" value="0.129" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.43658536585365854" />
         <entry key="app/src/main/res/layout/advertise_item.xml" value="0.10416666666666667" />
@@ -19,6 +21,8 @@
         <entry key="app/src/main/res/layout/item_advertise.xml" value="0.3006970170615376" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.3416666666666667" />
         <entry key="app/src/main/res/menu/toolbar_menu.xml" value="0.3445231119791667" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2225" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2225" />
       </map>
     </option>
   </component>
