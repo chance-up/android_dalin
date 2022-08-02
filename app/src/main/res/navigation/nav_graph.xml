@@ -6,27 +6,27 @@
     app:startDestination="@id/homeFragment">
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.android_dalin.ui.HomeFragment"
+        android:name="com.example.android_dalin.ui.user.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/estimateFragment"
-        android:name="com.example.android_dalin.ui.EstimateFragment"
+        android:name="com.example.android_dalin.ui.user.EstimateFragment"
         android:label="fragment_estimate"
         tools:layout="@layout/fragment_estimate" />
     <fragment
         android:id="@+id/searchFragment"
-        android:name="com.example.android_dalin.ui.SearchFragment"
+        android:name="com.example.android_dalin.ui.user.SearchFragment"
         android:label="fragment_search"
         tools:layout="@layout/fragment_search" />
     <fragment
         android:id="@+id/chatFragment"
-        android:name="com.example.android_dalin.ui.ChatFragment"
+        android:name="com.example.android_dalin.ui.user.ChatFragment"
         android:label="fragment_chat"
         tools:layout="@layout/fragment_chat" />
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.example.android_dalin.ui.ProfileFragment"
+        android:name="com.example.android_dalin.ui.user.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
 

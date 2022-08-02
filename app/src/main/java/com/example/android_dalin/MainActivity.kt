@@ -2,19 +2,28 @@ package com.example.android_dalin
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.navigation.fragment.NavHostFragment
-import androidx.navigation.fragment.findNavController
-import androidx.navigation.ui.setupWithNavController
-import com.example.android_dalin.databinding.ActivityMainBinding
+import com.example.android_dalin.ui.DalinLoginFragment
+import com.example.android_dalin.ui.UserLoginFragment
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var mainActivityBinding:ActivityMainBinding
+    private lateinit var fragmentUserLogin:UserLoginFragment
+    private lateinit var fragmentDalinLogin:DalinLoginFragment
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        mainActivityBinding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(mainActivityBinding.root)
-        val navHostFragment = supportFragmentManager.findFragmentById(mainActivityBinding.navHostFragmentContainer.id) as NavHostFragment
-        val navController = navHostFragment.findNavController()
-        mainActivityBinding.bottomNavView.setupWithNavController(navController)
+        setContentView(R.layout.activity_main)
+        fragmentUserLogin = UserLoginFragment()
+        fragmentDalinLogin = DalinLoginFragment()
+        changeFragment(1);
+    }
+    fun changeFragment(index: Int){
+        when(index){
+            1 -> {
+                supportFragmentManager.beginTransaction().replace(R.id.layoutLogin, fragmentUserLogin).commit()
+            }
+            2 -> {
+                supportFragmentManager.beginTransaction().replace(R.id.layoutLogin, fragmentDalinLogin).commit()
+            }
+        }
     }
 }

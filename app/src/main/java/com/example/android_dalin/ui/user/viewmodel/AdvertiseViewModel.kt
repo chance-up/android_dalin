@@ -1,4 +1,4 @@
-package com.example.android_dalin.ui.viewmodel
+package com.example.android_dalin.ui.user.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

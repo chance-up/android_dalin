@@ -7,13 +7,13 @@
 
         <variable
             name="homeVm"
-            type="com.example.android_dalin.ui.viewmodel.AdvertiseViewModel" />
+            type="com.example.android_dalin.ui.user.viewmodel.AdvertiseViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.HomeFragment">
+        tools:context=".ui.user.HomeFragment">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"

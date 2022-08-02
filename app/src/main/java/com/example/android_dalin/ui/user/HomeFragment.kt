@@ -1,4 +1,4 @@
-package com.example.android_dalin.ui
+package com.example.android_dalin.ui.user
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import com.example.android_dalin.adapter.ViewPagerAdapter
 import com.example.android_dalin.databinding.FragmentHomeBinding
-import com.example.android_dalin.ui.viewmodel.AdvertiseViewModel
+import com.example.android_dalin.ui.user.viewmodel.AdvertiseViewModel
 
 class HomeFragment : Fragment() {
     private lateinit var homeFragmentBinding : FragmentHomeBinding
