@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
 import com.bumptech.glide.Glide
 import com.example.android_dalin.data.Advertise
+import com.example.android_dalin.data.SubCategory
 
 object BindingAdapter {
     @BindingAdapter("items")
@@ -14,7 +15,13 @@ object BindingAdapter {
         (this.adapter as ViewPagerAdapter).submitList(ads.toMutableList())
     }
 
-    @BindingAdapter("imageUrl")
+    @BindingAdapter("items")
+    @JvmStatic
+    fun RecyclerView.setItems(gitUserList: ArrayList<SubCategory>?) {
+        (this.adapter as? SubCategoryAdapter)?.submitList(gitUserList?.toMutableList())
+    }
+
+    @BindingAdapter("imgUrl")
     @JvmStatic
     fun ImageView.loadImage(imageUrl : String) {
         Glide.with(context)

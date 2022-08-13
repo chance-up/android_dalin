@@ -7,13 +7,13 @@
 
         <variable
             name="homeVm"
-            type="com.example.android_dalin.ui.user.viewmodel.AdvertiseViewModel" />
+            type="com.example.android_dalin.ui.user.viewmodels.AdvertiseViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.user.HomeFragment">
+        tools:context=".ui.user.views.HomeFragment">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
@@ -53,14 +53,77 @@
             android:columnCount="4"
             android:orientation="horizontal"
             android:rowCount="2"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/advertise_viewpager">
 
+            <Button
+                android:id="@+id/buttonClean"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                android:text="청소" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"></TextView>
+            <Button
+                android:id="@+id/buttonCar"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_columnWeight="1"
+
+                android:layout_margin="10dp"
+                android:text="세차" />
+
+            <Button
+                android:id="@+id/buttonWash"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                android:text="세탁" />
+
+            <Button
+                android:id="@+id/buttonPet"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_columnWeight="1"
+
+                android:layout_margin="10dp"
+                android:text="애견" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_columnWeight="1"
+
+                android:layout_margin="10dp"
+                android:text="멀라1" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_columnWeight="1"
+
+                android:layout_margin="10dp"
+                android:text="멀라2" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_columnWeight="1"
+
+                android:layout_margin="10dp"
+                android:text="멀라3" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_columnWeight="1"
+
+
+                android:layout_margin="10dp"
+                android:text="멀라4" />
+
         </GridLayout>
 
 

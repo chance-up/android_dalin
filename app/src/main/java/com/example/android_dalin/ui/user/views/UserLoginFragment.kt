@@ -1,15 +1,12 @@
-package com.example.android_dalin.ui
+package com.example.android_dalin.ui.user.views
 
-import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.android_dalin.MainActivity
 import com.example.android_dalin.databinding.FragmentUserLoginBinding
-import com.example.android_dalin.ui.user.UserActivity
 
 
 class UserLoginFragment : Fragment() {
@@ -26,15 +23,7 @@ class UserLoginFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val mActivity = activity as MainActivity
         fragmentUserLoginBinding.buttonLogin.setOnClickListener{
-            Log.d("ttt","ttttg")
-//            mActivity?.let{
-//                val intent = Intent(it, UserActivity::class.java)
-//                it.startActivity(intent)
-//            }
-
-//            val intent = Intent (getActivity(), userActivity::class.java)
-//            getActivity()?.startActivity(intent)
-
+            mActivity.changeActivity(1)
         }
         fragmentUserLoginBinding.buttonChangeDalin.setOnClickListener{
             mActivity.changeFragment(2)

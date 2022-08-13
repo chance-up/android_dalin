@@ -7,21 +7,24 @@
         <entry key="app/src/main/res/drawable/bg_login_page1.xml" value="0.1385" />
         <entry key="app/src/main/res/drawable/ic_android_black_24dp.xml" value="0.18" />
         <entry key="app/src/main/res/drawable/toolbar_style.xml" value="0.129" />
-        <entry key="app/src/main/res/layout/activity_dalin.xml" value="0.13229166666666667" />
+        <entry key="app/src/main/res/layout/activity_dalin.xml" value="0.2784357706705729" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2857142857142857" />
-        <entry key="app/src/main/res/layout/activity_user.xml" value="0.128125" />
+        <entry key="app/src/main/res/layout/activity_user.xml" value="0.234533702677747" />
         <entry key="app/src/main/res/layout/advertise_item.xml" value="0.10416666666666667" />
         <entry key="app/src/main/res/layout/botton_nav.xml" value="0.19984802431610943" />
         <entry key="app/src/main/res/layout/fragment_base.xml" value="0.23283386230468756" />
         <entry key="app/src/main/res/layout/fragment_chat.xml" value="0.3179347826086957" />
+        <entry key="app/src/main/res/layout/fragment_cleaning.xml" value="0.13229166666666667" />
         <entry key="app/src/main/res/layout/fragment_dalin_login.xml" value="0.13229166666666667" />
         <entry key="app/src/main/res/layout/fragment_estimate.xml" value="0.3179347826086957" />
-        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.3179347826086957" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.23615160349854228" />
         <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.3179347826086957" />
         <entry key="app/src/main/res/layout/fragment_search.xml" value="0.3179347826086957" />
+        <entry key="app/src/main/res/layout/fragment_sub_category.xml" value="0.13229166666666667" />
         <entry key="app/src/main/res/layout/fragment_user_login.xml" value="0.20287539936102236" />
         <entry key="app/src/main/res/layout/indicator_advertise.xml" value="0.13269927536231885" />
         <entry key="app/src/main/res/layout/item_advertise.xml" value="0.3006970170615376" />
+        <entry key="app/src/main/res/layout/item_sub_category.xml" value="0.3187713623046875" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.3416666666666667" />
         <entry key="app/src/main/res/menu/toolbar_menu.xml" value="0.3445231119791667" />
       </map>

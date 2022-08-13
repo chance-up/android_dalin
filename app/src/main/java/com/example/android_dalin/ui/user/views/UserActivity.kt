@@ -1,20 +1,32 @@
-package com.example.android_dalin.ui.user
+package com.example.android_dalin.ui.user.views
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import android.view.View
+import androidx.navigation.Navigation
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.android_dalin.databinding.ActivityUserBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class UserActivity : AppCompatActivity() {
     private lateinit var activityUserBinding: ActivityUserBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         activityUserBinding = ActivityUserBinding.inflate(layoutInflater)
         setContentView(activityUserBinding.root)
-        val navHostFragment = supportFragmentManager.findFragmentById(activityUserBinding.navHostFragmentContainer.id) as NavHostFragment
+        val navHostFragment =
+            supportFragmentManager.findFragmentById(activityUserBinding.navHostFragmentContainer.id) as NavHostFragment
         val navController = navHostFragment.findNavController()
         activityUserBinding.bottomNavView.setupWithNavController(navController)
+    }
+
+    fun setVisbleBottonNav(flag: Int) {
+
+        activityUserBinding.bottomNavView.visibility = flag
+        Log.d("ccccc", activityUserBinding.bottomNavView.visibility.toString())
     }
 }
