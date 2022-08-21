@@ -30,6 +30,21 @@ class SubCategoryViewModel: ViewModel() {
                 "https://dalin-bucket.s3.ap-northeast-2.amazonaws.com/static/b0284898-4f31-41c3-a94e-a8a20ca44fcfsample1.png",
                 "샘플 설명"
             ),
+            SubCategory(
+                "4", "입주청소",
+                "https://dalin-bucket.s3.ap-northeast-2.amazonaws.com/static/b0284898-4f31-41c3-a94e-a8a20ca44fcfsample1.png",
+                "샘플 설명"
+            ),
+            SubCategory(
+                "5", "에어컨청소",
+                "https://dalin-bucket.s3.ap-northeast-2.amazonaws.com/static/b0284898-4f31-41c3-a94e-a8a20ca44fcfsample1.png",
+                "샘플 설명"
+            ),
+            SubCategory(
+                "6", "세탁기청소",
+                "https://dalin-bucket.s3.ap-northeast-2.amazonaws.com/static/b0284898-4f31-41c3-a94e-a8a20ca44fcfsample1.png",
+                "샘플 설명"
+            ),
         )
     }
 

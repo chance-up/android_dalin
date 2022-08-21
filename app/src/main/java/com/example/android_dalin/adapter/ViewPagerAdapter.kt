@@ -9,6 +9,8 @@ import com.example.android_dalin.data.Advertise
 import com.example.android_dalin.databinding.ItemAdvertiseBinding
 
 class ViewPagerAdapter : ListAdapter<Advertise, ViewPagerAdapter.MyViewHolder>(diffUtil) {
+
+
     class MyViewHolder(private val binding: ItemAdvertiseBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun bind(advertise: Advertise) {

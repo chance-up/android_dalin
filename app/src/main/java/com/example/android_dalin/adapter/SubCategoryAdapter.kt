@@ -1,5 +1,6 @@
 package com.example.android_dalin.adapter
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
@@ -14,10 +15,20 @@ import javax.inject.Inject
 class SubCategoryAdapter @Inject constructor() :
     ListAdapter<SubCategory, SubCategoryAdapter.MyViewHolder>(diffUtil) {
 
+    var onClickSubCategory: ((Int,String) -> Unit)? = null
+
+
+
     inner class MyViewHolder(private val binding: ItemSubCategoryBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun bind(subCategory: SubCategory) {
             binding.subCategory = subCategory
+            binding.subCategoryItemView.setOnClickListener {
+                Log.d("cccs","clisck1!!")
+                onClickSubCategory?.invoke(layoutPosition,subCategory.subCategoryId)
+                Log.d("cccs","clisck2!!")
+
+            }
         }
     }
 
@@ -28,6 +39,7 @@ class SubCategoryAdapter @Inject constructor() :
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
+
         holder.apply { bind(getItem(position)) }
     }
 

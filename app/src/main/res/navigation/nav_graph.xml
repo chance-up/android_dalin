@@ -8,10 +8,12 @@
         android:id="@+id/homeFragment"
         android:name="com.example.android_dalin.ui.user.views.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" >
+        tools:layout="@layout/fragment_home">
+
         <action
             android:id="@+id/action_homeFragment_to_subCategoryFragment"
             app:destination="@id/subCategoryFragment" />
+
     </fragment>
     <fragment
         android:id="@+id/estimateFragment"
@@ -36,6 +38,11 @@
     <fragment
         android:id="@+id/subCategoryFragment"
         android:name="com.example.android_dalin.ui.user.views.subcategory.SubCategoryFragment"
-        android:label="SubCategoryFragment" />
+        android:label="SubCategoryFragment">
+        <argument
+            android:name="subCategoryType"
+            android:defaultValue="1"
+            app:argType="integer" />
+    </fragment>
 
 </navigation>

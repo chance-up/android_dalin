@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.os.bundleOf
 import androidx.fragment.app.viewModels
 import androidx.navigation.Navigation
 import com.example.android_dalin.MainActivity
@@ -17,6 +18,7 @@ import com.example.android_dalin.ui.user.viewmodels.AdvertiseViewModel
 class HomeFragment : Fragment() {
     private lateinit var homeFragmentBinding : FragmentHomeBinding
     private val advertiseViewModel: AdvertiseViewModel by viewModels()
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -32,8 +34,13 @@ class HomeFragment : Fragment() {
 
         val uActivity = activity as UserActivity
         homeFragmentBinding.buttonClean.setOnClickListener {
-//            uActivity.setVisbleBottonNav(View.GONE)
-            Navigation.findNavController(it).navigate(R.id.action_homeFragment_to_subCategoryFragment)
+            // 이걸 번들로 전달하는 방법도 있다.
+//            var tempArg:Int=0
+//            val bundle = bundleOf("amount" to tempArg)
+//            Navigation.findNavController(it).navigate(R.id.action_homeFragment_to_subCategoryFragment,bundle)
+
+            val navToClean = HomeFragmentDirections.actionHomeFragmentToSubCategoryFragment(1)
+            Navigation.findNavController(it).navigate(navToClean)
         }
 
         return homeFragmentBinding.root
