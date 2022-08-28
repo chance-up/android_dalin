@@ -5,7 +5,7 @@
     <data>
         <variable
             name="ad"
-            type="com.example.android_dalin.data.Advertise" />
+            type="com.example.android_dalin.user.data.Advertise" />
     </data>
 
 

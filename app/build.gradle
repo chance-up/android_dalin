@@ -38,6 +38,9 @@ android {
     dataBinding{
         enabled = true
     }
+    buildFeatures {
+        viewBinding true
+    }
 }
 
 dependencies {
@@ -68,8 +71,6 @@ dependencies {
     implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
     implementation 'com.squareup.okhttp3:okhttp:5.0.0-alpha.2' // Apache 2.0 - https://www.apache.org/licenses/LICENSE-2.0
     implementation 'com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.2' // Apache 2.0 - https://www.apache.org/licenses/LICENSE-2.0
-
-
 
     // for viewpager2
     implementation("androidx.viewpager2:viewpager2:1.0.0")

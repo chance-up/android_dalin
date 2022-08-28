@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/bg_button_primary.xml" value="0.1385" />
         <entry key="app/src/main/res/drawable/bg_login_page1.xml" value="0.1385" />
         <entry key="app/src/main/res/drawable/ic_android_black_24dp.xml" value="0.18" />
@@ -20,7 +21,9 @@
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.23615160349854228" />
         <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.3179347826086957" />
         <entry key="app/src/main/res/layout/fragment_search.xml" value="0.3179347826086957" />
+        <entry key="app/src/main/res/layout/fragment_service.xml" value="0.20112202962239584" />
         <entry key="app/src/main/res/layout/fragment_sub_category.xml" value="0.13229166666666667" />
+        <entry key="app/src/main/res/layout/fragment_sub_category_detail.xml" value="0.11145833333333334" />
         <entry key="app/src/main/res/layout/fragment_user_login.xml" value="0.20287539936102236" />
         <entry key="app/src/main/res/layout/indicator_advertise.xml" value="0.13269927536231885" />
         <entry key="app/src/main/res/layout/item_advertise.xml" value="0.3006970170615376" />

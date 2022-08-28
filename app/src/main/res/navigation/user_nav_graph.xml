@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/user_nav_graph"
+    app:startDestination="@id/userLoginFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.android_dalin.user.ui.views.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_homeFragment_to_subCategoryFragment"
+            app:destination="@id/subCategoryFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/estimateFragment"
+        android:name="com.example.android_dalin.user.ui.views.EstimateFragment"
+        android:label="fragment_estimate"
+        tools:layout="@layout/fragment_estimate" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.android_dalin.user.ui.views.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.example.android_dalin.user.ui.views.ChatFragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.android_dalin.user.ui.views.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/subCategoryFragment"
+        android:name="com.example.android_dalin.user.ui.views.subcategory.SubCategoryFragment"
+        android:label="SubCategoryFragment">
+        <argument
+            android:name="subCategoryType"
+            android:defaultValue="1"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_subCategoryFragment_to_serviceFragment"
+            app:destination="@id/serviceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userLoginFragment"
+        android:name="com.example.android_dalin.user.ui.views.UserLoginFragment"
+        android:label="UserLoginFragment" >
+        <action
+            android:id="@+id/action_userLoginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/serviceFragment"
+        android:name="com.example.android_dalin.user.ui.views.service.ServiceFragment"
+        android:label="fragment_service"
+        tools:layout="@layout/fragment_service" >
+        <argument
+            android:name="serviceId"
+            android:defaultValue="1"
+            app:argType="string" />
+    </fragment>
+
+</navigation>

@@ -6,6 +6,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:name=".App"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -13,24 +14,28 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:name=".App"
-
         android:theme="@style/Theme.Android_dalin"
         tools:targetApi="31">
         <activity
-            android:name=".ui.dalin.DalinActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.user.views.UserActivity"
-            android:exported="false" />
-        <activity
             android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="true"
+            android:label="@string/title_activity_main"
+            android:theme="@style/Theme.Android_dalin.NoActionBar" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".dalin.ui.views.DalinActivity"
+            android:exported="true" />
+        <activity
+            android:name=".user.ui.views.UserActivity"
+            android:exported="true">
+
         </activity>
     </application>
 

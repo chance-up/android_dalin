@@ -4,7 +4,7 @@
     <data>
         <variable
             name="vm"
-            type="com.example.android_dalin.ui.user.viewmodels.SubCategoryViewModel" />
+            type="com.example.android_dalin.user.ui.viewmodels.SubCategoryViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
