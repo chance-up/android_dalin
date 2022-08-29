@@ -20,7 +20,7 @@ class UserLoginFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        fragmentUserLoginBinding = FragmentUserLoginBinding.inflate(inflater,container,false)
+        fragmentUserLoginBinding = FragmentUserLoginBinding.inflate(inflater, container, false)
         return fragmentUserLoginBinding.root
     }
 
@@ -32,13 +32,15 @@ class UserLoginFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 //        val mActivity = activity as MainActivity
-        fragmentUserLoginBinding.buttonLogin.setOnClickListener{
+        fragmentUserLoginBinding.buttonLogin.setOnClickListener {
             val navToHome = UserLoginFragmentDirections.actionUserLoginFragmentToHomeFragment()
             Navigation.findNavController(it).navigate(navToHome)
         }
-        fragmentUserLoginBinding.buttonChangeDalin.setOnClickListener{
-            val userActivity = UserActivity()
-            userActivity.changeDalinActivity()
+        fragmentUserLoginBinding.buttonChangeDalin.setOnClickListener {
+            val userActivity = activity as UserActivity
+            userActivity.apply {
+                startActivity(Intent(this, DalinActivity::class.java))
+            }
         }
     }
 

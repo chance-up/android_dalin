@@ -24,8 +24,6 @@ private val serviceViewModel:ServiceViewModel by viewModels()
             lifecycleOwner=this@ServiceFragment
         }
 
-
-
         return serviceFragmentBinding.root
     }
 
